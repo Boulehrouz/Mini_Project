@@ -1,0 +1,17 @@
+<div class="form-group">
+    <label for="">Sprint Name</label>
+    <input type="text" class="form-control" [(ngModel)]="sprint.SprintName">
+</div>
+<div class="form-group">
+    <label for="">Sprint Goal</label>
+    <input type="text" class="form-control" [(ngModel)]="sprint.SprintGoal">
+</div>
+<div class="form-group">
+    <label for="">Date Debut</label>
+    <input type="date" class="form-control" [(ngModel)]="sprint.DateDebut">
+</div>
+<div class="form-group">
+    <label for="">Date Fin</label>
+    <input type="date" class="form-control" [(ngModel)]="sprint.DateFin">
+</div>
+<button class="btn btn-primary" (click)="update()">Modifier</button>

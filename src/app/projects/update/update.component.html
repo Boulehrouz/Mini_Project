@@ -1,0 +1,25 @@
+<div class="form-group">
+    <label for="">Id</label>
+    <input type="number" class="form-control" [(ngModel)]="projet.Id">
+</div>
+<div class="form-group">
+    <label for="">Libelle</label>
+    <input type="text" class="form-control" [(ngModel)]="projet.Libelle">
+</div>
+<div class="form-group">
+    <label for="">Description</label>
+    <textarea class="form-control" [(ngModel)]="projet.Description"></textarea>
+</div>
+<div class="form-group">
+    <label for="">Nombre de jours</label>
+    <input type="number" class="form-control" [(ngModel)]="projet.SprintDays">
+</div>
+<div class="form-group">
+    <label for="">Date Debut</label>
+    <input type="date" class="form-control" [(ngModel)]="projet.DateDebut">
+</div>
+<div class="form-group">
+    <label for="">Date Fin</label>
+    <input type="date" class="form-control" [(ngModel)]="projet.DateFin">
+</div>
+<button class="btn btn-primary" (click)="update()">Modifier</button>
